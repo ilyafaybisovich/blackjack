@@ -73,7 +73,7 @@ begin
   
   puts "You were initially dealt these cards:"
   show_hand(you_hand)
-  say("Your score is #{score(you_values)}")
+  say("Your score is #{score(you_values)}.")
   
   begin
     if score(you_values) > 21
@@ -126,7 +126,7 @@ begin
 
   if compare
     say("The dealer decided to stay too and you are now going to compare hands.")
-    say("Dealer's hand is")
+    say("Dealer's hand is:")
     show_hand(dealer_hand) 
     say("Dealer's score is #{score(dealer_values)}.")
   end 
