@@ -1,7 +1,3 @@
-deck_cards = [2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,"Jack","Jack","Jack","Jack","Queen","Queen","Queen","Queen","King","King","King","King","Ace","Ace","Ace","Ace"]
-deck_suits = ["hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades"]
-deck_values = [2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,1,1,1,1]
-
 def say(msg)
   puts
   puts msg
@@ -52,6 +48,11 @@ end
 
 begin
   system 'clear'
+  
+  deck_cards = [2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,"Jack","Jack","Jack","Jack","Queen","Queen","Queen","Queen","King","King","King","King","Ace","Ace","Ace","Ace"]
+  deck_suits = ["hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades","hearts","clubs","diamonds","spades"]
+  deck_values = [2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,1,1,1,1]
+
   compare = false
   bust = false
   win = false
@@ -92,7 +93,7 @@ begin
           say("The score is #{score(you_values)}") 
         elsif decision == 's'
           system 'clear'
-          say("You decided to stay with the following hand:")
+          puts "You decided to stay with the following hand:"
           show_hand(you_hand)
           say("Your score is #{score(you_values)}")
           say("It is now the dealer's turn.") 
