@@ -120,9 +120,7 @@ begin
     puts "Dealer's hand is"
     show_hand(dealer_hand) 
     puts "Dealer's score is #{score(dealer_values)}."
-  end
-
-  
+  end 
 
   puts "Dealer wins." if bust || (compare && score(you_values)-score(dealer_values)<0)
   puts "You won." if win || (compare && score(you_values)-score(dealer_values)>0)
